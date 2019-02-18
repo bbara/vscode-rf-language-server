@@ -64,7 +64,7 @@ function _jsonKeywordToModel(
     DUMMY_LOCATION
   );
 
-  const parsedArgs = Array.isArray(args) ? args : [args];
+  const parsedArgs = args.split(', ');
 
   keyword.arguments = new Arguments(
     new Identifier("Arguments", DUMMY_LOCATION),
